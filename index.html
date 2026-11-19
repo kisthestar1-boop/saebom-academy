@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>새봄영어수학학원 · 장유 율하 초중고 영어·수학 (찰칵홈 예시)</title>
+<meta name="description" content="김해 장유·율하 초등·중등·고등 영어 수학 학원. 원서 리딩, 내신 대비, 학교별 시간표, 무료 레벨테스트 신청. (찰칵홈이 만든 예시 사이트)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{--nv:#14254A;--nv2:#1E3A72;--y:#FFC93C;--y2:#FFF4D1;--bg:#F6F8FC;--ink:#18233A;--mu:#5A6780;--ln:#E2E7F0;--r:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"Pretendard Variable",Pretendard,system-ui,sans-serif;color:var(--ink);background:#fff;font-size:16.5px;line-height:1.65;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.w{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{margin:0;letter-spacing:-.035em;line-height:1.25}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:14px;font-weight:800;border:0;cursor:pointer;font:inherit;font-weight:800}
+.btn.y{background:var(--y);color:var(--nv)}.btn.n{background:var(--nv);color:#fff}.btn.o{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35)}
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+header .w{display:flex;align-items:center;height:72px;gap:30px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:21px;color:var(--nv)}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--nv);display:grid;place-items:center;color:var(--y);font-style:normal;font-size:17px}
+.logo small{display:block;font-size:11px;font-weight:600;color:var(--mu);letter-spacing:.02em;margin-top:-3px}
+header nav{display:flex;gap:26px;margin-left:auto;font-weight:700;font-size:15.5px}header nav a:hover{color:var(--nv2)}
+header .cta{padding:11px 18px;font-size:14.5px}
+@media(max-width:900px){header nav{display:none}}
+/* hero */
+.hero{position:relative;background:var(--nv);color:#fff;overflow:hidden}
+.hero .bgimg{position:absolute;inset:0;background:var(--nv2) center/cover;opacity:.32}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--nv) 30%,rgba(20,37,74,.35))}
+.hero .w{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-block:96px 90px}
+.hero .ey{display:inline-block;background:rgba(255,201,60,.16);color:var(--y);border:1px solid rgba(255,201,60,.45);border-radius:99px;padding:6px 14px;font-weight:800;font-size:14px;margin-bottom:20px}
+.hero h1{font-size:clamp(36px,4.8vw,60px);font-weight:900}
+.hero h1 em{font-style:normal;color:var(--y)}
+.hero p{color:#C9D3EA;font-size:18px;margin:20px 0 30px;max-width:34em}
+.hero .row{display:flex;gap:10px;flex-wrap:wrap}
+.hcard{background:#fff;color:var(--ink);border-radius:var(--r);padding:26px;box-shadow:0 30px 60px rgba(0,0,0,.25)}
+.hcard b{font-size:20px;display:block;margin-bottom:6px}.hcard small{color:var(--mu)}
+.hcard ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px}
+.hcard li{display:flex;justify-content:space-between;align-items:center;background:var(--bg);border-radius:12px;padding:12px 14px;font-weight:700}
+.hcard li span{font-size:13px;font-weight:800;color:var(--nv2);background:var(--y2);border-radius:99px;padding:3px 10px}
+@media(max-width:900px){.hero .w{grid-template-columns:1fr;padding-block:60px}}
+.kpi{background:#fff;border-bottom:1px solid var(--ln)}.kpi .w{display:grid;grid-template-columns:repeat(4,1fr)}
+.kpi div{padding:26px 20px;border-left:1px solid var(--ln)}.kpi div:first-child{border-left:0}
+.kpi b{display:block;font-size:clamp(26px,2.6vw,36px);font-weight:900;color:var(--nv)}.kpi span{color:var(--mu);font-size:14.5px}
+@media(max-width:760px){.kpi .w{grid-template-columns:1fr 1fr}.kpi div{border-top:1px solid var(--ln)}.kpi div:nth-child(3){border-left:0}}
+section{padding-block:96px}section.alt{background:var(--bg)}
+.sh{margin-bottom:44px}.sh .k{font-size:13px;font-weight:900;letter-spacing:.16em;color:var(--nv2)}.sh h2{font-size:clamp(28px,3.4vw,42px);font-weight:900;margin-top:8px}.sh p{color:var(--mu);margin:10px 0 0;max-width:46em}
+.sh.c{text-align:center}.sh.c p{margin-inline:auto}
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why div{border:1px solid var(--ln);border-radius:var(--r);padding:30px;background:#fff}
+.why i{font-style:normal;display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--y2);font-size:26px}
+.why b{display:block;font-size:20px;margin:16px 0 6px}.why p{margin:0;color:var(--mu)}
+@media(max-width:860px){.why{grid-template-columns:1fr}}
+/* programs */
+.prog{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pc{border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--ln);display:flex;flex-direction:column}
+.pc .im{aspect-ratio:16/10;background:var(--nv2) center/cover;position:relative}
+.pc .im span{position:absolute;left:16px;top:16px;background:var(--y);color:var(--nv);font-weight:900;font-size:13px;border-radius:99px;padding:5px 12px}
+.pc .in{padding:24px;display:flex;flex-direction:column;gap:8px;flex:1}.pc h3{font-size:22px}.pc p{margin:0;color:var(--mu)}
+.pc ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px}.pc li:before{content:"✓ ";color:var(--nv2);font-weight:900}
+@media(max-width:860px){.prog{grid-template-columns:1fr}}
+/* timetable */
+.tt{background:#fff;border:1px solid var(--ln);border-radius:var(--r);padding:28px}
+.tt .step{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.tt .step b{width:96px;color:var(--mu);font-size:14px}
+.chip{border:1.5px solid var(--ln);background:#fff;border-radius:99px;padding:8px 16px;font:inherit;font-weight:700;cursor:pointer}
+.chip.on{background:var(--nv);border-color:var(--nv);color:#fff}
+.tt table{width:100%;border-collapse:collapse;margin-top:10px;font-size:15px}
+.tt th,.tt td{border-bottom:1px solid var(--ln);padding:12px 10px;text-align:center}.tt th{background:var(--bg);font-size:14px;color:var(--mu)}
+.tt td.c{background:var(--y2);font-weight:800;color:var(--nv)}
+.tt .note{font-size:14px;color:var(--mu);margin-top:12px}
+/* teachers */
+.tch{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tc{border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--ln)}
+.tc .im{aspect-ratio:4/4.2;background:#DDE4F2 center 20%/cover}
+.tc .in{padding:20px 22px}.tc b{font-size:19px}.tc em{font-style:normal;font-size:13px;font-weight:800;color:var(--nv2);background:var(--y2);border-radius:99px;padding:3px 10px;margin-left:6px}
+.tc p{margin:8px 0 0;color:var(--mu);font-size:15px}
+@media(max-width:860px){.tch{grid-template-columns:1fr}}
+/* results */
+.res{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:start}
+.bars{background:var(--nv);color:#fff;border-radius:var(--r);padding:30px}
+.bars b{font-size:20px}.bars .r{display:grid;grid-template-columns:110px 1fr 60px;gap:12px;align-items:center;margin-top:16px;font-size:15px}
+.bars i{height:10px;border-radius:9px;background:rgba(255,255,255,.15);overflow:hidden}.bars i:after{content:"";display:block;height:100%;width:var(--w);background:var(--y);border-radius:9px}
+.revs{display:grid;gap:14px}
+.rv{background:#fff;border:1px solid var(--ln);border-radius:16px;padding:20px 22px}.rv q{display:block;font-size:16.5px;font-weight:600}.rv q:before,.rv q:after{content:""}.rv small{display:block;color:var(--mu);margin-top:8px}
+@media(max-width:860px){.res{grid-template-columns:1fr}}
+/* level test */
+.lt{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;background:linear-gradient(135deg,var(--nv),var(--nv2));color:#fff;border-radius:28px;padding:44px}
+.lt h2{font-size:clamp(28px,3vw,38px);font-weight:900}.lt p{color:#C9D3EA}
+.lt ol{padding-left:20px;color:#E4EAF8}.lt li{margin:6px 0}
+.lt form{background:#fff;color:var(--ink);border-radius:20px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lt label{display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px}.lt .full{grid-column:1/-1}
+.lt input,.lt select,.lt textarea{font:inherit;font-weight:500;padding:12px;border:1px solid var(--ln);border-radius:10px}
+.lt .ok{grid-column:1/-1;font-weight:800;color:#1E7A4A}
+@media(max-width:860px){.lt{grid-template-columns:1fr;padding:28px}.lt form{grid-template-columns:1fr}}
+/* info */
+.info{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+.map{border-radius:var(--r);background:#E6ECF6;min-height:300px;display:grid;place-items:center;color:var(--mu);text-align:center;font-weight:700}
+.info table{width:100%;border-collapse:collapse}.info th,.info td{text-align:left;padding:14px 4px;border-bottom:1px solid var(--ln)}.info th{width:110px;color:var(--mu);font-weight:700}
+@media(max-width:860px){.info{grid-template-columns:1fr}}
+footer{background:#0E1A33;color:#93A3C4;padding-block:44px;font-size:14px}footer b{color:#fff}
+.fab{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;flex-direction:column;gap:10px}
+.fab a{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;font-size:12px;font-weight:800;box-shadow:0 12px 26px rgba(0,0,0,.2);text-align:center;line-height:1.2}
+.fab .t{background:var(--y);color:var(--nv)}.fab .c{background:var(--nv);color:#fff}
+.badge{position:fixed;left:14px;bottom:14px;z-index:40;background:rgba(14,26,51,.88);color:#fff;font-size:12px;font-weight:700;border-radius:99px;padding:7px 12px}
+.badge a{color:var(--y)}
+</style>
+</head>
+<body>
+<header><div class="w">
+ <a class="logo" href="#"><i>봄</i><span>새봄영어수학<small>SAEBOM ACADEMY · 장유 율하</small></span></a>
+ <nav><a href="#why">학원 소개</a><a href="#prog">과정</a><a href="#tt">시간표</a><a href="#tch">강사진</a><a href="#res">성과·후기</a><a href="#info">오시는 길</a></nav>
+ <a class="btn y cta" href="#lt">레벨테스트 신청</a>
+</div></header>
+
+<div class="hero"><div class="bgimg" style="background-image:url(img/hero.jpg)"></div><div class="w">
+ <div>
+  <span class="ey">📚 장유·율하 초·중·고 영어 · 수학</span>
+  <h1>읽는 힘이<br><em>성적이 되는</em> 학원</h1>
+  <p>원서 리딩으로 영어의 기초 체력을 만들고, 학교별 내신 대비로 점수까지 책임집니다. 아이 수준에 맞춘 소수 정예 수업.</p>
+  <div class="row"><a class="btn y" href="#lt">무료 레벨테스트 신청 →</a><a class="btn o" href="#tt">학교별 시간표 보기</a></div>
+ </div>
+ <div class="hcard"><b>이번 달 모집 반</b><small>소수 정예 · 반별 최대 8명</small>
+  <ul><li>초등 리딩 기초반 <span>3자리 남음</span></li><li>중1 내신 영어 · 율하중 <span>모집 중</span></li><li>중2 수학 심화 <span>2자리 남음</span></li><li>고1 모의고사 대비 <span>모집 중</span></li></ul></div>
+</div></div>
+<div class="kpi"><div class="w"><div><b>8명</b><span>반별 최대 인원</span></div><div><b>1,200권</b><span>원서 리딩 라이브러리</span></div><div><b>학교별</b><span>내신 시간표 · 기출 분석</span></div><div><b>매주</b><span>학부모 학습 리포트</span></div></div></div>
+
+<section id="why"><div class="w">
+ <div class="sh c"><span class="k">WHY SAEBOM</span><h2>새봄은 이렇게 다릅니다</h2><p>문제집만 푸는 학원이 아니라, 스스로 읽고 생각하는 습관을 만드는 학원입니다.</p></div>
+ <div class="why">
+  <div><i>📖</i><b>원서 리딩 습관</b><p>레벨에 맞는 원서를 매주 읽고, 1:1로 말하고 써 보며 영어의 기초 체력을 만듭니다.</p></div>
+  <div><i>🎯</i><b>학교별 내신 대비</b><p>율하중·장유중·관동중 등 학교별 교과서와 기출을 분석해 시험 4주 전부터 집중 대비합니다.</p></div>
+  <div><i>📊</i><b>매주 학습 리포트</b><p>출결, 과제, 단어 시험, 수업 태도를 매주 문자로 보내 드려 집에서도 흐름을 알 수 있습니다.</p></div>
+ </div>
+</div></section>
+
+<section id="prog" class="alt"><div class="w">
+ <div class="sh"><span class="k">PROGRAMS</span><h2>학년별 과정</h2><p>아이의 지금 위치에서 시작합니다. 레벨테스트 후 반을 배정해요.</p></div>
+ <div class="prog">
+  <div class="pc"><div class="im" style="background-image:url(img/p1.jpg)"><span>초등</span></div><div class="in"><h3>리딩 · 파닉스</h3><p>소리 내어 읽기부터 원서 챕터북까지</p><ul><li>파닉스 · 사이트워드</li><li>원서 리딩 · 북리포트</li><li>초등 연산 · 사고력 수학</li></ul></div></div>
+  <div class="pc"><div class="im" style="background-image:url(img/p2.jpg)"><span>중등</span></div><div class="in"><h3>내신 · 문법</h3><p>학교별 교과서 · 기출 맞춤 대비</p><ul><li>학교별 내신반</li><li>중등 문법 · 서술형</li><li>중등 수학 개념 · 심화</li></ul></div></div>
+  <div class="pc"><div class="im" style="background-image:url(img/p3.jpg)"><span>고등</span></div><div class="in"><h3>수능 · 모의고사</h3><p>유형 분석과 실전 훈련</p><ul><li>고1·2 모의고사 대비</li><li>구문 독해 · 어휘</li><li>고등 수학 내신</li></ul></div></div>
+ </div>
+</div></section>
+
+<section id="tt"><div class="w">
+ <div class="sh"><span class="k">TIMETABLE</span><h2>학교별 시간표</h2><p>학년을 고른 뒤 학교를 고르면, 그 학교 시험에 맞춘 시간표가 나와요.</p></div>
+ <div class="tt">
+  <div class="step"><b>① 학년</b><span id="gr"></span></div>
+  <div class="step"><b>② 학교</b><span id="sc"></span></div>
+  <div id="tbl"></div>
+  <div class="note">※ 시험 4주 전부터는 주말 보충 수업이 추가돼요. 정확한 시간은 상담 때 안내드려요.</div>
+ </div>
+</div></section>
+
+<section id="tch" class="alt"><div class="w">
+ <div class="sh"><span class="k">TEACHERS</span><h2>강사진</h2><p>아이 한 명 한 명의 이름과 약점을 기억하는 선생님들입니다.</p></div>
+ <div class="tch">
+  <div class="tc"><div class="im" style="background-image:url(img/t1.jpg)"></div><div class="in"><b>김하나 원장</b><em>영어</em><p>영어교육 전공 · 리딩 지도 12년<br>초·중등 리딩 · 내신 총괄</p></div></div>
+  <div class="tc"><div class="im" style="background-image:url(img/t2.jpg)"></div><div class="in"><b>이도윤 선생님</b><em>수학</em><p>수학교육 전공 · 중·고등 9년<br>개념부터 심화까지 단계별 지도</p></div></div>
+  <div class="tc"><div class="im" style="background-image:url(img/t3.jpg)"></div><div class="in"><b>박서연 선생님</b><em>영어</em><p>TESOL · 원어 수업 7년<br>말하기 · 쓰기 · 북리포트</p></div></div>
+ </div>
+</div></section>
+
+<section id="res"><div class="w">
+ <div class="sh"><span class="k">RESULTS</span><h2>성과 · 학부모 후기</h2><p>※ 찰칵홈 예시 사이트라 아래 숫자와 후기는 예시 문구예요.</p></div>
+ <div class="res">
+  <div class="bars"><b>지난 학기 내신 평균 (예시)</b>
+   <div class="r"><span>중1 영어</span><i style="--w:92%"></i><b>92점</b></div>
+   <div class="r"><span>중2 영어</span><i style="--w:88%"></i><b>88점</b></div>
+   <div class="r"><span>중2 수학</span><i style="--w:85%"></i><b>85점</b></div>
+   <div class="r"><span>고1 모의</span><i style="--w:78%"></i><b>2등급</b></div>
+  </div>
+  <div class="revs">
+   <div class="rv"><q>영어를 싫어하던 아이가 원서를 가방에 넣어 다녀요. 억지로 시키지 않아서 좋아요.</q><small>초5 학부모 · 예시 후기</small></div>
+   <div class="rv"><q>매주 오는 리포트 덕분에 시험 전에 뭐가 부족한지 미리 알 수 있었어요.</q><small>중2 학부모 · 예시 후기</small></div>
+   <div class="rv"><q>반 인원이 적어서 선생님이 아이 약점을 정확히 알고 계세요.</q><small>중1 학부모 · 예시 후기</small></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="lt" class="alt"><div class="w">
+ <div class="lt">
+  <div><h2>무료 레벨테스트 신청</h2><p>신청해 주시면 원장님이 직접 연락드려 시간을 잡아 드려요.</p>
+   <ol><li>신청서 작성 (1분)</li><li>원장님 전화 상담 · 시간 예약</li><li>레벨테스트 40분 + 결과 상담</li><li>반 배정 · 첫 수업</li></ol></div>
+  <form id="f">
+   <label>학생 이름<input id="n" required></label>
+   <label>학년<select id="g"><option>초3</option><option>초4</option><option>초5</option><option>초6</option><option>중1</option><option>중2</option><option>중3</option><option>고1</option><option>고2</option></select></label>
+   <label>과목<select id="s"><option>영어</option><option>수학</option><option>영어 + 수학</option></select></label>
+   <label>학부모 연락처<input id="c" required placeholder="010-"></label>
+   <label class="full">궁금한 점 (선택)<textarea id="m" rows="3" placeholder="예: 원서 리딩을 처음 해 봐요"></textarea></label>
+   <button class="btn n full" style="justify-content:center">레벨테스트 신청하기 →</button>
+   <div class="ok" id="ok" hidden></div>
+  </form>
+ </div>
+</div></section>
+
+<section id="info"><div class="w">
+ <div class="sh"><span class="k">LOCATION</span><h2>오시는 길</h2></div>
+ <div class="info"><div class="map">🗺 지도 자리<br><small>실제 사이트에서는 네이버·카카오 지도가 들어가요</small></div>
+  <table><tr><th>주소</th><td>경남 김해시 율하○로 ○○, 3층 (예시)</td></tr><tr><th>수업 시간</th><td>평일 14:00 ~ 22:00 · 토 10:00 ~ 15:00</td></tr><tr><th>상담 전화</th><td>055-000-0000 (예시)</td></tr><tr><th>차량</th><td>율하 · 장유 아파트 단지 운행</td></tr><tr><th>주차</th><td>건물 지하 주차 1시간 무료</td></tr></table></div>
+</div></section>
+
+<footer><div class="w"><b>새봄영어수학학원</b> (예시) · 김해 장유 율하 · 교습소 등록번호 제○○○호<br>© 2026 Saebom Academy · 이 사이트는 <a href="https://kisthestar1-boop.github.io/minsung-ai/web/" style="color:#FFC93C">찰칵홈</a>이 만든 예시예요 · 학원 이름·숫자·후기는 가상</div></footer>
+<div class="fab"><a class="t" href="#lt">레벨<br>테스트</a><a class="c" href="tel:0550000000">전화<br>상담</a></div>
+<div class="badge">찰칵홈 예시 · 가상 학원 · <a href="https://kisthestar1-boop.github.io/minsung-ai/web/">만들기 문의</a></div>
+
+<script>
+const T={"초등":{"전체":[["초등 리딩 기초","월·수·금","15:00-16:20"],["초등 리딩 심화","화·목","16:30-18:00"],["사고력 수학","화·목","15:00-16:20"]]},
+"중1":{"율하중":[["영어 내신","월·수","18:30-20:30"],["수학 개념","화·목","18:30-20:30"]],"장유중":[["영어 내신","화·목","17:30-19:30"],["수학 개념","월·수","17:30-19:30"]],"관동중":[["영어 내신","월·목","19:00-21:00"],["수학 개념","화·금","19:00-21:00"]]},
+"중2":{"율하중":[["영어 문법·서술형","월·수","19:00-21:00"],["수학 심화","화·목","19:00-21:00"]],"장유중":[["영어 문법·서술형","화·목","18:00-20:00"],["수학 심화","월·수","18:00-20:00"]],"관동중":[["영어 문법·서술형","월·목","18:30-20:30"],["수학 심화","화·금","18:30-20:30"]]},
+"고1":{"율하고":[["모의고사 영어","월·수","20:00-22:00"],["고등 수학 내신","화·목","20:00-22:00"]],"장유고":[["모의고사 영어","화·목","19:30-21:30"],["고등 수학 내신","월·수","19:30-21:30"]]}};
+let G="중1",S="율하중";const $=s=>document.querySelector(s);
+function draw(){$("#gr").innerHTML=Object.keys(T).map(g=>`<button class="chip ${g===G?"on":""}" data-g="${g}">${g}</button>`).join(" ");
+ const sch=Object.keys(T[G]);if(!sch.includes(S))S=sch[0];$("#sc").innerHTML=sch.map(s=>`<button class="chip ${s===S?"on":""}" data-s="${s}">${s}</button>`).join(" ");
+ const days=["월","화","수","목","금"];$("#tbl").innerHTML=`<table><tr><th>수업</th>${days.map(d=>`<th>${d}</th>`).join("")}</tr>${T[G][S].map(r=>`<tr><td style="text-align:left;font-weight:800">${r[0]}</td>${days.map(d=>r[1].includes(d)?`<td class="c">${r[2]}</td>`:"<td></td>").join("")}</tr>`).join("")}</table>`}
+document.addEventListener("click",e=>{const g=e.target.closest("[data-g]"),s=e.target.closest("[data-s]");if(g){G=g.dataset.g;draw()}if(s){S=s.dataset.s;draw()}});draw();
+$("#f").onsubmit=async e=>{e.preventDefault();const ok=$("#ok"),b=e.target.querySelector("button");b.disabled=true;ok.hidden=false;ok.textContent="보내는 중…";
+ const msg=`학생: ${$("#n").value} · ${$("#g").value} · ${$("#s").value}\n${$("#m").value}`;
+ try{const j=await (await fetch("https://script.google.com/macros/s/AKfycbz09Pualc3dVyOYhjRIBLY1lVpeZMpi8YMoUFlBcqWjJ30gKJagm0HAhio3rFaIf_E/exec",{method:"POST",body:JSON.stringify({op:"hpq",f:{kind:"📚 레벨테스트 · 새봄학원(예시)",name:$("#n").value,contact:$("#c").value,msg}})})).json();if(j.error)throw new Error(j.error);ok.textContent=`✅ 신청됐어요 (번호 ${j.id}). 원장님이 곧 연락드려요.`;e.target.reset()}
+ catch(err){ok.textContent="보내지 못했어요. 전화로 문의해 주세요."}b.disabled=false};
+</script>
+</body>
+</html>
