@@ -153,6 +153,11 @@ html{scroll-behavior:auto!important}
 .kq{display:flex;gap:6px;overflow-x:auto;padding:8px 12px;background:rgba(255,255,255,.35)}.kq button{flex:none;border:1px solid rgba(0,0,0,.1);background:#fff;border-radius:99px;padding:7px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;color:#222}
 .kf{display:grid;gap:6px;padding:10px 12px;background:#fff}.kf input{font:inherit;font-size:14px;border:1px solid #E1E4EA;border-radius:10px;padding:9px 10px;min-width:0}.kf>input{display:block}.kr{display:flex;gap:6px}.kr input{flex:1}.kr button{border:0;background:#FEE500;font-weight:800;border-radius:10px;padding:0 14px;cursor:pointer}
 .kn{display:block;background:#fff;padding:0 12px 10px;font-size:11px;color:#888}
+
+.pk{position:fixed;inset:0;z-index:150;background:rgba(15,20,30,.5);display:grid;place-items:center;padding:14px}.pk[hidden]{display:none}
+.pkb{position:relative;background:#fff;border-radius:22px;width:min(1040px,100%);max-height:92vh;overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.3)}
+.pkb>#pkc>section,.pkb>#pkc>div{margin:0!important}.pkb #pkc section{padding:34px 0 30px!important}
+.pkx{position:sticky;top:12px;float:right;margin:12px 12px 0 0;border:0;background:#EEF1F5;width:38px;height:38px;border-radius:12px;cursor:pointer;font-size:16px;z-index:3}
 </style>
 </head>
 <body>
@@ -359,5 +364,12 @@ document.addEventListener("click",e=>{const k=e.target.closest("[data-kk]");if(k
 document.getElementById("kf").onsubmit=async e=>{e.preventDefault();const m=kfm.value;add(m,1);kfm.value="";
  try{const j=await (await fetch("https://script.google.com/macros/s/AKfycbz09Pualc3dVyOYhjRIBLY1lVpeZMpi8YMoUFlBcqWjJ30gKJagm0HAhio3rFaIf_E/exec",{method:"POST",body:JSON.stringify({op:"hpq",f:{kind:"📚 새봄학원(예시) 카톡 상담",name:kfn.value,contact:kfc.value,msg:m}})})).json();if(j.error)throw 0;add("메시지 잘 받았어요! (번호 "+j.id+") 곧 "+kfc.value+"로 연락드릴게요 🙏")}catch(_){add("앗, 전송이 안 됐어요. 전화로 문의해 주세요.")}};
 })()</script>
+<div class="pk" id="pk" hidden role="dialog" aria-modal="true"><div class="pkb"><button class="pkx" data-pkx aria-label="닫기">✕</button><div id="pkc"></div></div></div><script>(()=>{const P=document.getElementById("pk"),C=document.getElementById("pkc"),EX="lt".split(",");let node=null,mark=null;
+const close=()=>{if(node&&mark){mark.parentNode.insertBefore(node,mark);mark.remove()}node=mark=null;P.hidden=true;document.body.style.overflow=""};
+const open=id=>{const t=document.getElementById(id);if(!t)return false;close();node=t.closest("section")||t;mark=document.createComment("pk");node.parentNode.insertBefore(mark,node);C.appendChild(node);P.hidden=false;document.body.style.overflow="hidden";P.querySelector(".pkb").scrollTop=0;const f=node.querySelector("input,select,textarea");if(f&&f.offsetParent)setTimeout(()=>f.focus({preventScroll:true}),60);return true};
+document.addEventListener("click",e=>{if(e.target.closest("[data-pkx]")||e.target===P){close();return}
+ const a=e.target.closest('a[href^="#"]:not(nav a):not(.logo)');if(!a)return;const h=(a.getAttribute("href")||"").slice(1);if(!h||EX.includes(h))return;if(P.contains(a)&&node&&node.id===h)return;
+ if(open(h)){e.preventDefault();e.stopPropagation()}},true);
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!P.hidden)close()});window.__pkClose=close;})()</script>
 </body>
 </html>
